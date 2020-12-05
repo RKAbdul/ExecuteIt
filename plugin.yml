@@ -1,0 +1,7 @@
+---
+name: ExecuteIt
+version: 0.1
+author: RKAbdul
+main: RKAbdul\executeit\ExecuteIt
+api: 3.11.0
+...

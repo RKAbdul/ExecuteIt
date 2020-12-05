@@ -1,0 +1,75 @@
+---
+# Internal use only, DO-NOT CHANGE
+version: 1
+
+#  ____  _  __    _    _         _       _
+# |  _ \| |/ /   / \  | |__   __| |_   _| |
+# | |_) | ' /   / _ \ | '_ \ / _` | | | | |
+# |  _ <| . \  / ___ \| |_) | (_| | |_| | |
+# |_| \_\_|\_\/_/   \_\_.__/ \__,_|\__,_|_|
+#
+
+#Configuration about Block Break Event
+BlockBreak:
+
+  #Rather to enable it or not
+  Enabled: true
+
+  #Rather or not you want the commands to work in all worlds, if you set this to false.
+  #You must set the worlds you want it to work in the next option.
+  All-Worlds: false
+
+  #The worlds you want the commands to work in if All-Worlds is set to false
+  Worlds:
+    - "world1"
+    - "world2"
+
+  #Now here you set the block id and commands you want to be executed
+  #Format: "ID:command1:command2:..."
+  #First part ID must be the block id you want the command1 and command2 to be executed when its breaked.
+  #You can add unlimited commands, keeping in mind the format.
+  Blocks:
+    - "1:tell {player} you mined a stone block:say Hi"
+    - "2:tell {player} you mined a grass block:say {player} Mines a grass block:gamemode c {player}"
+    
+    
+#Configuration about Block Interact Event
+BlockInteract:
+
+  #Rather to enable it or not
+  Enabled: true
+
+  #Rather or not you want the commands to work in all worlds, if you set this to false.
+  #You must set the worlds you want it to work in the next option.
+  All-Worlds: false
+
+  #The worlds you want the commands to work in if All-Worlds is set to false
+  Worlds:
+    - "world1"
+    - "world2"
+
+  #Format: "ID:command1:command2:..."
+  Blocks:
+    - "1:tell {player} you touched a stone block :say Stone Interact"
+    - "2:tell {player} you touched a grass block:say Grass interact"
+    
+#Configuration about Block Place Event
+BlockPlace:
+
+  #Rather to enable it or not
+  Enabled: true
+
+  #Rather or not you want the commands to work in all worlds, if you set this to false.
+  #You must set the worlds you want it to work in the next option.
+  All-Worlds: false
+
+  #The worlds you want the commands to work in if All-Worlds is set to false
+  Worlds:
+    - "world1"
+    - "world2"
+
+  #Format: "ID:command1:command2:..."
+  Blocks:
+    - "1:tell {player} you placed down a stone block :say Stone Block Place"
+    - "3:tell {player} you placed down a block:say Block Place:gamemode s {player}"
+...
